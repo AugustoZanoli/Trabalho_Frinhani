@@ -54,8 +54,9 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
 ## 2️⃣ **Fórmula de Prioridade**
 A prioridade de uma disciplina é calculada com base na fórmula:
 
-
-\text{Prioridade} = \text{round}\left( (200 \cdot O + 40 \cdot A + 20 \cdot S + 80 \cdot N + P_{\text{prereq}}) \cdot \left(1.1 - \frac{\text{periodo}}{10}\right) \cdot \frac{\text{carga_horaria}}{60}, 2 \right)
+```
+round((200 * O + 40 * A + 20 * S + 80 * N + P_prereq) * (1.1 - (periodo / 10)) * (carga_horaria / 60), 2)
+```
 
 Onde:
 

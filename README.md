@@ -29,7 +29,7 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
         "CargaHoraria": 60
     },
     "Disciplina2": {
-        "Optativa": 1,
+        "Obrigatoria": -1,
         "Anual": 0,
         "Semestre": 1,
         "Periodo": 1,

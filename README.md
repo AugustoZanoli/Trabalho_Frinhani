@@ -41,7 +41,7 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
 
 `Prerequisitos:` Lista de disciplinas que devem ser concluídas antes.
 
-`Obrigatoria / Optativa:` Define se é obrigatória (1) ou optativa (1).
+`Obrigatoria / Optativa:` Define se é obrigatória (1) ou optativa (-1).
 
 `Anual / Semestre:` Indica se a disciplina é anual ou semestral.
 

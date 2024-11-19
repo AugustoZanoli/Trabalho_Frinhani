@@ -64,6 +64,7 @@ def bfs(disciplina, grafo, status_do_curso, visitados):
         if status != "aprovada":
             # Se todos os pré-requisitos foram cumpridos, recomenda essa disciplina
             if all(status_do_curso.get(pr, "nao_cursada") == "aprovada" for pr in prereqs):
+                ############################ ADICIONAR CONFLITOS DE HORÁRIOS AQUI ############################
                 prioridade = calcular_prioridade(O, A, S, periodo, int(bool(prereqs)), carga_horaria)
                 recomendacoes.append((atual, prioridade))
 

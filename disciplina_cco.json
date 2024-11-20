@@ -1,0 +1,762 @@
+{
+    "XDES01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 1,
+    "Periodo": 1,
+    "Prerequisitos": [],
+    "CargaHoraria": 60,
+    "Horario": [["3M45", "4M45"], ["3N12", "5N34"]],
+    "Equivalente": {
+      "ECOP11A": [["2M45", "3M12"], ["4M23", "5M45"], ["2M23", "3M45"], ["2M45", "3M23"]]
+    }
+    },
+    "XDES02": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 2,
+    "Prerequisitos": ["XDES01"],
+    "CargaHoraria": 60,
+    "Horario": [["3T34", "5T34"], ["4N34", "6N12"]],
+    "Equivalente": {
+      "ECOP13A": [["4T12", "6T34"], ["4T34", "6T12"], ["3T12", "5T34"], ["3T34", "5T12"]]
+    }
+    },
+    "XDES03": {
+    "Obrigatoria": 1,
+    "Anual": 1,
+    "Semestre": 1,
+    "Periodo": 3,
+    "Prerequisitos": ["XDES02"],
+    "CargaHoraria": 60,
+    "Horario": [["3T12", "5T34"], ["3N12", "5N34"], ["3M23", "5M23"]],
+    "Equivalente": {}
+    },
+    "XDES04": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 2,
+    "Prerequisitos": [],
+    "CargaHoraria": 60,
+    "Horario": [["4M45", "2T34"], ["2N12", "5N34"]],
+    "Equivalente": {}
+    },
+    "CDES05": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 4,
+      "Prerequisitos": ["XMAC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XPAD01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 4,
+    "Prerequisitos": ["CTCO02"],
+    "CargaHoraria": 60,
+    "Horario": [["5M45", "4T12"], ["2N12", "5N12"]],
+    "Equivalente": {}
+    },
+    "XMCO01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 6,
+    "Prerequisitos": ["XMAC02"],
+    "CargaHoraria": 60,
+    "Horario": [["3T12", "5T12"], ["3N1234"]],
+    "Equivalente": {}
+    },
+    "CMCO05": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 5,
+      "Prerequisitos": ["XMAC02", "XDES02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XRSC01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 5,
+    "Prerequisitos": ["CRSC02"],
+    "CargaHoraria": 60,
+    "Horario": [["2T12", "5T12"], ["3N34", "6N12"]],
+    "Equivalente": {}
+  },
+    "CRSC02": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 3,
+      "Prerequisitos": ["CTCO01", "CRSC04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CRSC03": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CRSC04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": ["CRSC03"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CRSC05": {
+    "Optativa": -1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 10,
+    "Prerequisitos": ["SRSC02"],
+    "CargaHoraria": 60,
+    "Horario": [["3M2345"]],
+    "Equivalente": {}
+  },
+    "CTCO01": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": ["XDES01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CTCO02": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 3,
+      "Prerequisitos": ["CTCO01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CTCO03": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 4,
+      "Prerequisitos": ["XDES02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CTCO04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 4,
+      "Prerequisitos": ["CTCO02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CTCO05": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 6,
+      "Prerequisitos": ["CTCO04", "CDES05"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CTCO06": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": ["CTCO05"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "MAT00A": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 1,
+    "Prerequisitos": [],
+    "CargaHoraria": 60,
+    "Horario": [["3N12", "5N12"], ["2T34", "4T12"], ["2M45", "4M23"], ["2N12", "4N34"], ["2N12", "4N12"], ["3T12", "6T12"], ["2T34", "4T34"], ["3T34", "5T34"]],
+    "Equivalente": {
+      "MATI2301": [["3M23", "5M23"], ["3T12", "5T12"], ["3T34", "5T34"], ["2T34", "5T34"], ["2T34", "4T34"], ["2T12", "4T12"]]
+    }
+    },
+    "MAT00B": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": ["MAT00A"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XMAC01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 2,
+    "Prerequisitos": [],
+    "CargaHoraria": 60,
+    "Horario": [["2N34", "4N12"], ["3M23", "4M23"]],
+    "Equivalente": {
+      "MAT057": [["2N12", "3N34"]]
+    }
+    },
+    "XMAC02": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 4,
+    "Prerequisitos": ["MAT00A", "XMAC01", "STCO01"],
+    "CargaHoraria": 60,
+    "Horario": [["3N34", "4N12"], ["4T12", "6T12"]],
+    "Equivalente": {
+      "MAT013": [["2M45", "4M45"], ["2T34", "4T34"], ["2T12", "4T12"], ["3N34", "5N34"]]
+    }
+    },
+    "CMAC03": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 3,
+      "Prerequisitos": ["CTCO01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CMAC04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": ["MAT00A"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CMAC05": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 4,
+      "Prerequisitos": ["MAT00A"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XAHC01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 8,
+    "Prerequisitos": [],
+    "CargaHoraria": 60,
+    "Horario": [["4N1234"]],
+    "Equivalente": {}
+  },
+    "XAHC02": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 7,
+    "Prerequisitos": ["XDES03"],
+    "CargaHoraria": 60,
+    "Horario": [["2N34", "5N12"], ["3M45", "6M23"], ["2T12", "3T12"]],
+    "Equivalente": {}
+  },
+    "XAHC03": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 8,
+    "Prerequisitos": ["TCC1"],
+    "CargaHoraria": 60,
+    "Horario": [["5T12", "6T12"], ["5N1234"]],
+    "Equivalente": {}
+  },
+    "CAHC04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SDES05": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SDES06": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SDES07": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XDES04", "XPAD01", "XDES03"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XDES08": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XDES10": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XDES11": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XDES12": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CDES13": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XDES02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ECOX21": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": ["XDES01"],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ECOX22": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": ["ECOX21"],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SPAD02": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XPAD01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SPAD03": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XMAC02", "XPAD01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XPAD04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XPAD01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XPAD08": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 7, 8],
+      "Prerequisitos": ["XPAD01", "SPAD03"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XPAD09": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XMAC02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XMCO02": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XMAC02", "CTCO02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XMCO03": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XMAC02", "CTCO02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XMCO04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": ["XMAC02", "CTCO02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CMCO06": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XMAC02", "CMCO05"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CMCO07": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": ["XMAC01", "CMCO05"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XMCO08": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": ["XMAC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XRSC06": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XRSC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XRSC07": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XRSC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "CRSC08": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XRSC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XRSC09": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XRSC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XRSC10": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XRSC01"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ECOS04": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XRSC09"],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SADG01": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["IEPG22"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "SADG02": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": [],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG01": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG10": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG14": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG20": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG22": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM03E": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": ["IEPG01"],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XAHC06": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 7,
+      "Prerequisitos": [],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XAHC07": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [5, 7],
+      "Prerequisitos": ["XDES03", "XDES04"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "XAHC08": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [6, 8],
+      "Prerequisitos": ["XMAC02", "XAHC02"],
+      "CargaHoraria": 64,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "IEPG21": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM08H": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "LET007": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM51H": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 48,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM52H": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 2,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM54H": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": 1,
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    },
+    "ADM58H": {
+      "Obrigatoria": 1,
+      "Anual": null,
+      "Semestre": null,
+      "Periodo": [1, 2],
+      "Prerequisitos": [],
+      "CargaHoraria": 32,
+      "Horario": null,
+      "Equivalente": {}
+    }
+  }

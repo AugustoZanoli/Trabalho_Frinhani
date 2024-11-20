@@ -20,10 +20,7 @@
     "CargaHoraria": 60,
     "Horario": [["3N12", "5N12"], ["2T34", "4T12"], ["2M45", "4M23"], ["2N12", "4N34"], ["2N12", "4N12"], ["3T12", "6T12"], ["2T34", "4T34"], ["3T34", "5T34"]],
     "Equivalente": {
-      "MAT00A": [[]],
-      "MAT001": [[]],
-      "MATI2301": [[]],
-      "MATI01": [[]]
+      "MATI2301": [["3M23", "5M23"], ["3T12", "5T12"], ["3T34", "5T34"], ["2T34", "5T34"], ["2T34", "4T34"], ["2T12", "4T12"]]
     }
   },
   "IEPG01": {
@@ -34,9 +31,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["7M1, 4N34"], ["3N345"], ["3T345"]],
-    "Equivalente": {
-      "EPR301": [[]]
-    }
+    "Equivalente": {}
   },
   "IEPG22": {
     "Obrigatoria": 1,
@@ -46,9 +41,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["4N12"], ["3T34"], ["4T34"]],
-    "Equivalente": {
-      "SIN310": [[]]
-    }
+    "Equivalente": {}
   },
   "SAHC04": {
     "Obrigatoria": 1,
@@ -68,9 +61,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["2N34", "5N12"]],
-    "Equivalente": {
-      "SIN410": [[]]
-    }
+    "Equivalente": {}
   },
   "XDES02": {
     "Obrigatoria": 1,
@@ -81,8 +72,7 @@
     "CargaHoraria": 60,
     "Horario": [["3T34", "5T34"], ["4N34", "6N12"]],
     "Equivalente": {
-      "COM220": [[]],
-      "ECOP13A": [[]]
+      "ECOP13A": [["4T12", "6T34"], ["4T34", "6T12"], ["3T12", "5T34"], ["3T34", "5T12"]]
     }
   },
   "XDES04": {
@@ -93,9 +83,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["4M45", "2T34"], ["2N12", "5N34"]],
-    "Equivalente": {
-      "COM210": [[]]
-    }
+    "Equivalente": {}
   },
   "STCO01": {
     "Obrigatoria": 1,
@@ -105,11 +93,7 @@
     "Prerequisitos": ["XDES01"],
     "CargaHoraria": 60,
     "Horario": [["3N34", "5N12"]],
-    "Equivalente": {
-      "CTCO01": [[]],
-      "COM111": [[]],
-      "ECOP02A": [[]]
-    }
+    "Equivalente": {}
   },
   "XMAC01": {
     "Obrigatoria": 1,
@@ -120,9 +104,7 @@
     "CargaHoraria": 60,
     "Horario": [["2N34", "4N12"], ["3M23", "4M23"]],
     "Equivalente": {
-      "MAT015": [[]],
-      "MAT017": [[]],
-      "MAT057": [[]]
+      "MAT057": [["2N12", "3N34"]]
     }
   },
   "IEPG04": {
@@ -143,10 +125,7 @@
     "Prerequisitos": ["XDES02"],
     "CargaHoraria": 60,
     "Horario": [["3T12", "5T34"], ["3N12", "5N34"], ["3M23", "5M23"]],
-    "Equivalente": {
-      "COM222": [[]],
-      "ECOX05": [[]]
-    }
+    "Equivalente": {}
   },
   "SDES05": {
     "Obrigatoria": 1,
@@ -156,9 +135,7 @@
     "Prerequisitos": ["XDES04"],
     "CargaHoraria": 60,
     "Horario": [["4N12", "6N34"]],
-    "Equivalente": {
-      "COM211": [[]]
-    }
+    "Equivalente": {}
   },
   "SRSC03": {
     "Obrigatoria": 1,
@@ -169,9 +146,7 @@
     "CargaHoraria": 60,
     "Horario": [["3N34", "5N12"]],
     "Equivalente": {
-      "SIN120": [[]],
-      "CRSC04": [[]],
-      "ECOX01": [[]]
+      "CRSC04": [["3T12", "5T12"]]
     }
   },
   "STCO02": {
@@ -183,8 +158,7 @@
     "CargaHoraria": 60,
     "Horario": [["2N12", "6N12"]],
     "Equivalente": {
-      "CTCO02": [[]],
-      "COM112": [[]]
+      "CTCO02": [["2T12", "4T34"]]
     }
   },
   "ECN001": {
@@ -196,8 +170,8 @@
     "CargaHoraria": 60,
     "Horario": [[""]],
     "Equivalente": {
-      "EPRI04": [[]],
-      "IEPG20": [[]]
+      "EPRI04": [["2M123"], ["3T345"]],
+      "IEPG20": [["2M123"], ["3T345"], ["4N345"], ["5M123"], ["6M123"], ["6T123"], ["6T345"]]
     }
   },
   "XPAD01": {
@@ -208,9 +182,7 @@
     "Prerequisitos": ["STCO02"],
     "CargaHoraria": 60,
     "Horario": [["5M45", "4T12"], ["2N12", "5N12"]],
-    "Equivalente": {
-      "COM230": [[]]
-    }
+    "Equivalente": {}
   },
   "XMAC02": {
     "Obrigatoria": 1,
@@ -221,7 +193,7 @@
     "CargaHoraria": 60,
     "Horario": [["3N34", "4N12"], ["4T12", "6T12"]],
     "Equivalente": {
-      "MAT013": [[]]
+      "MAT013": [["2M45", "4M45"], ["2T34", "4T34"], ["2T12", "4T12"], ["3N34", "5N34"]]
     }
   },
   "SMAC03": {
@@ -233,8 +205,7 @@
     "CargaHoraria": 60,
     "Horario": [["3N12", "5N34"]],
     "Equivalente": {
-      "SIN110": [[]],
-      "CMAC03": [[]]
+      "CMAC03": [["3M45", "5M23"]]
     }
   },
   "IEPG14": {
@@ -245,9 +216,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["2N34"], ["3N34"], ["5M45"]],
-    "Equivalente": {
-      "SIN411": [[]]
-    }
+    "Equivalente": {}
   },
   "SRSC02": {
     "Obrigatoria": 1,
@@ -257,10 +226,7 @@
     "Prerequisitos": ["STCO01", "SRSC03"],
     "CargaHoraria": 60,
     "Horario": [["4N34", "6N12"]],
-    "Equivalente": {
-      "COM120": [[]],
-      "ECOS01": [[]]
-    }
+    "Equivalente": {}
   },
   "SPAD02": {
     "Obrigatoria": 1,
@@ -270,9 +236,7 @@
     "Prerequisitos": ["XPAD01"],
     "CargaHoraria": 60,
     "Horario": [["2N34", "4N12"]],
-    "Equivalente": {
-      "COM231": [[]]
-    }
+    "Equivalente": {}
   },
   "SPAD03": {
     "Obrigatoria": 1,
@@ -292,9 +256,7 @@
     "Prerequisitos": ["SRSC02"],
     "CargaHoraria": 60,
     "Horario": [["2T12", "5T12"], ["3N34", "6N12"]],
-    "Equivalente": {
-      "COM240": [[]]
-    }
+    "Equivalente": {}
   },
   "ADM51E": {
     "Obrigatoria": 1,
@@ -316,7 +278,7 @@
     "CargaHoraria": 60,
     "Horario": [["2N34", "5N12"]],
     "Equivalente": {
-      "COM212": [[]]
+      "COM212": [["4M23", "2T12"]]
     }
   },
   "XMCO01": {
@@ -327,10 +289,7 @@
     "Prerequisitos": ["XMAC02"],
     "CargaHoraria": 60,
     "Horario": [["3T12", "5T12"], ["3N1234"]],
-    "Equivalente": {
-      "CIC260": [[]],
-      "SIN260": [[]]
-    }
+    "Equivalente": {}
   },
   "IEPG10": {
     "Obrigatoria": 1,
@@ -340,11 +299,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["3M23"], ["3T34"], ["4M45"], ["4N12"], ["4T12"], ["5M23"], ["5N34"], ["5T12"], ["5T34"], ["6M45"], ["6T12"]],
-    "Equivalente": {
-      "EPR502": [[]],
-      "EPR003": [[]],
-      "COM311": [[]]
-    }
+    "Equivalente": {}
   },
   "SDES07": {
     "Obrigatoria": 1,
@@ -354,9 +309,7 @@
     "Prerequisitos": ["XDES03", "XDES04", "XPAD01"],
     "CargaHoraria": 60,
     "Horario": [["2N12", "6N12"], ["2N12", "4N12"]],
-    "Equivalente": {
-      "SIN412": [[]]
-    }
+    "Equivalente": {}
   },
   "XAHC02": {
     "Obrigatoria": 1,
@@ -366,9 +319,7 @@
     "Prerequisitos": ["XDES03"],
     "CargaHoraria": 60,
     "Horario": [["2N34", "5N12"], ["3M45", "6M23"], ["2T12", "3T12"]],
-    "Equivalente": {
-      "COM213": [[]]
-    }
+    "Equivalente": {}
   },
   "ADM03E": {
     "Obrigatoria": 1,
@@ -378,9 +329,7 @@
     "Prerequisitos": ["IEPG01"],
     "CargaHoraria": 60,
     "Horario": [["3N345"], ["7M5", "3N12"]],
-    "Equivalente": {
-      "SIN312": [[]]
-    }
+    "Equivalente": {}
   },
   "XAHC01": {
     "Obrigatoria": 1,
@@ -390,9 +339,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["4N1234"]],
-    "Equivalente": {
-      "COM312": [[]]
-    }
+    "Equivalente": {}
   },
   "XAHC03": {
     "Obrigatoria": 1,
@@ -402,9 +349,7 @@
     "Prerequisitos": ["TCC001"],
     "CargaHoraria": 60,
     "Horario": [["5T12", "6T12"], ["5N1234"]],
-    "Equivalente": {
-      "COM310": [[]]
-    }
+    "Equivalente": {}
   },
   "TCC001": {
     "Obrigatoria": 1,
@@ -424,9 +369,7 @@
     "Prerequisitos": ["IEPG22"],
     "CargaHoraria": 60,
     "Horario": [["3N12", "4N34"]],
-    "Equivalente": {
-      "SIN210": [[]]
-    }
+    "Equivalente": {}
   },
   "TCC002": {
     "Obrigatoria": 1,
@@ -474,9 +417,7 @@
     "Prerequisitos": ["STCO01"],
     "CargaHoraria": 60,
     "Horario": [["4N123"]],
-    "Equivalente": {
-      "ECOE44": [[]]
-    }
+    "Equivalente": {}
   },
   "XPAD04": {
     "Optativa": -1,
@@ -506,9 +447,7 @@
     "Prerequisitos": ["XPAD01", "SPAD03"],
     "CargaHoraria": 60,
     "Horario": [["4M45", "2T34"]],
-    "Equivalente": {
-      "COM921": [[]]
-    }
+    "Equivalente": {}
   },
   "XMCO03": {
     "Optativa": -1,
@@ -518,9 +457,7 @@
     "Prerequisitos": ["XMAC02", "SMAC03"],
     "CargaHoraria": 60,
     "Horario": [[]],
-    "Equivalente": {
-      "COM936": [[]]
-    }
+    "Equivalente": {}
   },
   "CRSC05": {
     "Optativa": -1,
@@ -540,9 +477,7 @@
     "Prerequisitos": ["XRSC01"],
     "CargaHoraria": 60,
     "Horario": [["5N1234"]],
-    "Equivalente": {
-      "COM241": [[]]
-    }
+    "Equivalente": {}
   },
   "XRSC09": {
     "Optativa": -1,
@@ -552,9 +487,7 @@
     "Prerequisitos": ["XRSC01"],
     "CargaHoraria": 60,
     "Horario": [["5M45", "3T12"], ["3N34", "5N12"]],
-    "Equivalente": {
-      "COM242": [[]]
-    }
+    "Equivalente": {}
   },
   "IEPG05": { 
     "Optativa": -1, 
@@ -564,9 +497,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["5M45"], ["2N12"]],
-    "Equivalente": {
-      "EPR603": [[]]
-    }
+    "Equivalente": {}
   },
   "IEPG15": { 
     "Optativa": -1, 
@@ -586,9 +517,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["2T345"], ["3M123"], ["3T345"], ["4T345"], ["5T345"], ["6M123"], ["6T345"]],
-    "Equivalente": {
-      "SOC002": [[]]
-    }
+    "Equivalente": {}
   },
   "ADM54H": { 
     "Optativa": -1, 
@@ -628,9 +557,7 @@
     "Prerequisitos": ["XDES04"],
     "CargaHoraria": 60,
     "Horario": [["2N12", "5N34"]],
-    "Equivalente": {
-      "COM922": [[]]
-    }
+    "Equivalente": {}
   },
   "XDES12": {
     "Optativa": -1,
@@ -670,9 +597,7 @@
     "Prerequisitos": ["ECOX21"],
     "CargaHoraria": 60,
     "Horario": [[]],
-    "Equivalente": {
-      "ECOE45": [[]]
-    }
+    "Equivalente": {}
   },
   "SPAD05": {
     "Optativa": -1,
@@ -682,9 +607,7 @@
     "Prerequisitos": ["SPAD02", "XDES03"],
     "CargaHoraria": 60,
     "Horario": [[]],
-    "Equivalente": {
-      "COM935": [[]]
-    }
+    "Equivalente": {}
   },
   "SPAD07": {
     "Optativa": -1,
@@ -724,9 +647,7 @@
     "Prerequisitos": ["XRSC01"],
     "CargaHoraria": 60,
     "Horario": [[]],
-    "Equivalente": {
-      "SIN414": [[]]
-    }
+    "Equivalente": {}
   },
   "XRSC08": {
     "Optativa": -1,
@@ -776,10 +697,7 @@
     "Prerequisitos": [],
     "CargaHoraria": 60,
     "Horario": [["3T12"], ["4T34"], ["3N12"], ["6M45"]],
-    "Equivalente": {
-      "IEPG13": [[]],
-      "ADM025": [[]]
-    }
+    "Equivalente": {}
   },
   "ADM01F": { 
     "Optativa": -1, 

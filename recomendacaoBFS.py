@@ -39,7 +39,7 @@ def obter_disciplinas_cursadas(grafo):
     return status_do_curso
 
 # Função BFS para explorar o grafo de disciplinas
-def bfs(disciplina, grafo, status_do_curso, visitados):
+def bfs(disciplina, grafo, status_do_curso, visitados, p):
     fila = deque([disciplina])  # Iniciando a fila com a primeira matéria
     recomendacoes = []
     
@@ -56,8 +56,13 @@ def bfs(disciplina, grafo, status_do_curso, visitados):
         # Usando "Obrigatoria" se existir, caso contrário usa "Optativa"
         O = dados.get("Obrigatoria", dados.get("Optativa", 0))
         A = dados.get("Anual", 0)
-        S = dados.get("Semestre", 0)
         periodo = dados.get("Periodo", 0)
+        if p == periodo:
+            S = 1
+        elif p < periodo:
+            S = -10
+        else:
+            S = 0
 
         # Verifica se a disciplina pode ser recomendada
         if status != "aprovada":
@@ -74,13 +79,13 @@ def bfs(disciplina, grafo, status_do_curso, visitados):
     return recomendacoes
  
 
-def recomendar_matriculas(grafo, status_do_curso):
+def recomendar_matriculas(grafo, status_do_curso, p):
     recomendacoes = []
     visitados = set()
     
     for disciplina in grafo:
         if disciplina not in visitados:
-            recomendacoes.extend(bfs(disciplina, grafo, status_do_curso, visitados))
+            recomendacoes.extend(bfs(disciplina, grafo, status_do_curso, visitados, p))
     
     recomendacoes.sort(key=lambda x: x[1], reverse=True)
     
@@ -273,8 +278,14 @@ status_do_curso = obter_disciplinas_cursadas(grafo_das_disciplinas)
 tempo_status_disciplinas = time.time() - (inicio_tempo + tempo_carregar_grafo)
 print(f"Tempo para coletar status das disciplinas: {tempo_status_disciplinas:.2f} segundos")
 
+while True:
+    periodo = input("Qual o período atual? ")
+    if periodo >= "1":
+        break
+    print("Período inválido. Por favor, insira um período válido. (1 ou superior)")
+
 # Gerar recomendações
-recomendacoes = recomendar_matriculas(grafo_das_disciplinas, status_do_curso)
+recomendacoes = recomendar_matriculas(grafo_das_disciplinas, status_do_curso, periodo)
 
 # Medir o tempo para gerar as recomendações
 tempo_recomendacoes = time.time() - (inicio_tempo + tempo_carregar_grafo + tempo_status_disciplinas)

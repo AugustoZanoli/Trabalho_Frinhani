@@ -20,30 +20,37 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
 
 ```json
 {
-    "Disciplina1": {
-        "Obrigatoria": 1,
-        "Anual": 0,
-        "Semestre": 1,
-        "Periodo": 2,
-        "Prerequisitos": ["DisciplinaX", "DisciplinaY"],
-        "CargaHoraria": 60
-    },
-    "Disciplina2": {
-        "Obrigatoria": -1,
-        "Anual": 0,
-        "Semestre": 1,
-        "Periodo": 1,
-        "Prerequisitos": [],
-        "CargaHoraria": 45
+    "XDES01": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 1,
+    "Periodo": 1,
+    "Prerequisitos": [],
+    "Horario": [["3N12", "5N34"] ,["3M45", "4M45"]],
+    "Equivalente": {
+      "ECOP11A": [["2M45", "3M12"], ["4M23", "5M45"], ["2M23", "3M45"], ["2M45", "3M23"]]
     }
-} 
+  },
+  "MAT00A": {
+    "Obrigatoria": 1,
+    "Anual": 0,
+    "Semestre": 0,
+    "Periodo": 1,
+    "Prerequisitos": [],
+    "Horario": [["3N12", "5N12"],["2N12", "4N34"],  ["2N12", "4N12"], ["2T34", "4T12"], ["2M45", "4M23"], ["3T12", "6T12"], ["2T34", "4T34"], ["3T34", "5T34"]],
+    "Equivalente": {
+      "MATI2301": []
+    }
+  },
 ```
 
 `Prerequisitos:` Lista de disciplinas que devem ser concluídas antes.
 
 `Obrigatoria / Optativa:` Define se é obrigatória (1) ou optativa (-1).
 
-`Anual / Semestre:` Indica se a disciplina é anual ou semestral.
+`Anual:` Indica se a disciplina é anual ou semestral.
+
+`Semestre:` Indica se a disciplina é de um semestre futuro, atual ou anterior.
 
 `Periodo:` O período sugerido para cursar.
 
@@ -55,7 +62,7 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
 A prioridade de uma disciplina é calculada com base na fórmula:
 
 ```
-round((200 * O + 40 * A + 20 * S + 80 * N + P_prereq) * (1.1 - (periodo / 10)) * (carga_horaria / 60), 2)
+round((200 * O + 40 * A + 20 * S + 80 * N + P_prereq) * (1.1 - (periodo / 10)), 2)
 ```
 
 Onde:
@@ -64,7 +71,7 @@ Onde:
 
 `A:` Anualidade (1 ou 0).
 
-`S:` Semestralidade (1 ou 0).
+`S:` Localização de semestre (1, 0 ou -10).
 
 `N:` Indicador binário (1 ou 0) para presença de pré-requisitos.
 
@@ -89,6 +96,13 @@ Exemplo de interação:
 Você já cursou a disciplina Cálculo 1? (s/n):
 ```
 
+Após isso pergunta para qual semestre o aluno está se matriculando.
+Exemplo de interação:
+
+```
+Qual o período atual? (Ex: 1, 2, 3, ...): 
+```
+
 3️⃣ Cálculo de Prioridade
 
 Para cada disciplina disponível, a fórmula de prioridade é usada para determinar sua relevância para matrícula.
@@ -103,10 +117,17 @@ Até 5 disciplinas são recomendadas, ordenadas por prioridade.
 Após responder às perguntas, o sistema exibe:
 
 ```
+_______________________________________________________________________
+
 Recomendações de matrícula (máximo de 5 disciplinas):
-1. Disciplina: Algoritmos e Estruturas de Dados, Prioridade: 8.75
-2. Disciplina: Redes de Computadores, Prioridade: 7.85
-...
+
+Disciplina: XDES01 | Prioridade: 220.0 | Horarios: ['3N12', '5N34']
+Disciplina: MAT00A | Prioridade: 220.0 | Horarios: ['2N12', '4N34']
+Disciplina: IEPG01 | Prioridade: 220.0 | Horarios: ['3N345']
+Disciplina: IEPG22 | Prioridade: 220.0 | Horarios: ['4N12']
+Disciplina: SAHC04 | Prioridade: 220.0 | Horarios: ['6N12']
+
+_______________________________________________________________________
 ```
 
 Caso nenhuma disciplina seja recomendada:
@@ -133,34 +154,14 @@ Nenhuma disciplina disponível para matrícula no momento.
 python recomendacao_matriculas.py
 ```
 
-3- Responda às perguntas interativas sobre as disciplinas já cursadas.
+3- Responda às perguntas interativas sobre as disciplinas já cursadas e sobre o semestre que deseja cursar.
 
 4- Veja as recomendações de matrícula geradas pelo sistema.
 
 ---
 
-## **🕒 Medição de Desempenho**
-O sistema exibe o tempo de execução das seguintes etapas:
-
-- Carregamento do grafo.
-
-- Coleta de status das disciplinas.
-
-- Geração das recomendações.
-
-- Tempo total de execução.
-
-Exemplo de saída:
-
-```
-Tempo para carregar o grafo: 0.12 segundos  
-Tempo para coletar status das disciplinas: 1.45 segundos  
-Tempo para gerar recomendações: 0.08 segundos  
-Tempo total de execução: 1.65 segundos
-```
-
----
-
 ## **🤝 Contribuições**
 - Augusto de Camargos Zanoli
-- Matheus Anthony 
+- Lucas Silva Pinheiro
+- Matheus Anthony Pereira Abreu
+- Tomás Francisco Rossetto Lavez

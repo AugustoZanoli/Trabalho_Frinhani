@@ -281,13 +281,15 @@ tempo_recomendacoes = time.time() - (inicio_tempo + tempo_carregar_grafo + tempo
 print(f"Tempo para gerar recomendações: {tempo_recomendacoes:} segundos")
 
 # Exibir recomendações
-print("\nRecomendações de matrícula (máximo de 5 disciplinas):")
+print("_______________________________________________________________________")
+print("\nRecomendações de matrícula (máximo de 5 disciplinas):\n")
 if recomendacoes:
     for disciplina, prioridade, horario in recomendacoes:
-        print(f"Disciplina: {disciplina}, Prioridade: {prioridade}, Horarios: {horario}")
+        print(f"Disciplina: {disciplina} | Prioridade: {prioridade} | Horarios: {horario}")
 else:
     print("Nenhuma disciplina disponível para matrícula no momento.")
 
+print("\n_______________________________________________________________________")
 # Medir o tempo total de execução
 tempo_total = time.time() - inicio_tempo
 print(f"\nTempo total de execução: {tempo_total:} segundos")

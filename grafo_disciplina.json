@@ -314,7 +314,7 @@
     "Anual": 0,
     "Semestre": 0,
     "Periodo": 8,
-    "Prerequisitos": ["TCC001"],
+    "Prerequisitos": [],
     "Horario": [ ["5N1234"], ["5T12", "6T12"]],
     "Equivalente": {}
   },

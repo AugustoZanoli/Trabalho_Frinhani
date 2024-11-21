@@ -74,7 +74,7 @@
     "Semestre": 0,
     "Periodo": 2,
     "Prerequisitos": [],
-    "Horario": [["2N12", "5N34"] ,["4M45", "2T34"]],
+    "Horario": [["2N12", "6N12"] ,["4M45", "2T34"]],
     "Equivalente": {}
   },
   "STCO01": {
@@ -92,7 +92,7 @@
     "Semestre": 0,
     "Periodo": 2,
     "Prerequisitos": [],
-    "Horario": [["2N34", "4N12"], ["3M23", "4M23"]],
+    "Horario": [["3N34", "6N34"], ["3M23", "4M23"]],
     "Equivalente": {
       "MAT057": [["2N12", "3N34"]]
     }
@@ -130,9 +130,9 @@
     "Semestre": 0,
     "Periodo": 3,
     "Prerequisitos": [],
-    "Horario": [["3N34", "5N12"]],
+    "Horario": [["2N12", "4T34"]],
     "Equivalente": {
-      "CRSC04": [["3T12", "5T12"]]
+      "CRSC04": [["4N12", "4N34"]]
     }
   },
   "STCO02": {

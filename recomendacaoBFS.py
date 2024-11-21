@@ -1,6 +1,5 @@
 import json
 from collections import deque
-import time  # Importando a biblioteca time para medir o tempo
 
 # Função para carregar o grafo de disciplinas de um arquivo JSON
 def carregar_grafo_de_arquivo(arquivo):
@@ -175,22 +174,11 @@ def recomendar_matriculas(grafo, status_do_curso, p):
 print("Bem-vindo ao sistema de recomendação de matrícula!")
 print("Responda às perguntas para que possamos recomendar as melhores disciplinas.")
 
-# Medir o tempo total de execução
-inicio_tempo = time.time()
-
 # Carregar o grafo de disciplinas a partir de um arquivo JSON
 grafo_das_disciplinas = carregar_grafo_de_arquivo("grafo_disciplina.json")
 
-# Medir o tempo para carregar o grafo
-tempo_carregar_grafo = time.time() - inicio_tempo
-print(f"Tempo para carregar o grafo: {tempo_carregar_grafo:.2f} segundos")
-
 # Perguntar sobre cada disciplina com base nos pré-requisitos
 status_do_curso = obter_disciplinas_cursadas(grafo_das_disciplinas)
-
-# Medir o tempo para coletar o status das disciplinas
-tempo_status_disciplinas = time.time() - (inicio_tempo + tempo_carregar_grafo)
-print(f"Tempo para coletar status das disciplinas: {tempo_status_disciplinas:.2f} segundos")
 
 while True:
     periodo = input("Qual o período atual? (Ex: 1, 2, 3, ...): ")
@@ -203,10 +191,6 @@ while True:
 # Gerar recomendações
 recomendacoes = recomendar_matriculas(grafo_das_disciplinas, status_do_curso, periodo)
 
-# Medir o tempo para gerar as recomendações
-tempo_recomendacoes = time.time() - (inicio_tempo + tempo_carregar_grafo + tempo_status_disciplinas)
-print(f"Tempo para gerar recomendações: {tempo_recomendacoes:} segundos")
-
 # Exibir recomendações
 print("_______________________________________________________________________")
 print("\nRecomendações de matrícula (máximo de 5 disciplinas):\n")
@@ -217,6 +201,3 @@ else:
     print("Nenhuma disciplina disponível para matrícula no momento.")
 
 print("\n_______________________________________________________________________")
-# Medir o tempo total de execução
-tempo_total = time.time() - inicio_tempo
-print(f"\nTempo total de execução: {tempo_total:} segundos")

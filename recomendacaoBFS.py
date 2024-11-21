@@ -8,9 +8,9 @@ def carregar_grafo_de_arquivo(arquivo):
         grafo = json.load(f)
     return grafo
 
-def calcular_prioridade(O, A, S, periodo, P_prereq, carga_horaria):
+def calcular_prioridade(O, A, S, periodo, P_prereq):
     N = 1 if P_prereq else 0
-    return round((200 * O + 40 * A + 20 * S + 80 * N + P_prereq) * (1.1 - (periodo / 10)) * (carga_horaria / 60), 2)
+    return round((200 * O + 40 * A + 20 * S + 80 * N + P_prereq) * (1.1 - (periodo / 10)), 2)
 
 # Função para coletar informações sobre disciplinas cursadas, considerando pré-requisitos
 def obter_disciplinas_cursadas(grafo):
@@ -58,13 +58,12 @@ def bfs(disciplina, grafo, status_do_curso, visitados):
         A = dados.get("Anual", 0)
         S = dados.get("Semestre", 0)
         periodo = dados.get("Periodo", 0)
-        carga_horaria = dados.get("CargaHoraria", 0)
 
         # Verifica se a disciplina pode ser recomendada
         if status != "aprovada":
             # Se todos os pré-requisitos foram cumpridos, recomenda essa disciplina
             if all(status_do_curso.get(pr, "nao_cursada") == "aprovada" for pr in prereqs):
-                prioridade = calcular_prioridade(O, A, S, periodo, int(bool(prereqs)), carga_horaria)
+                prioridade = calcular_prioridade(O, A, S, periodo, int(bool(prereqs)))
                 recomendacoes.append((atual, prioridade))
 
         # Adiciona os vizinhos à fila

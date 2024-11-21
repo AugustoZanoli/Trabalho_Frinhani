@@ -54,8 +54,6 @@ O grafo de disciplinas deve ser armazenado em um arquivo `grafo_disciplina.json`
 
 `Periodo:` O período sugerido para cursar.
 
-`CargaHoraria:` A carga horária total da disciplina.
-
 ---
 
 ## 2️⃣ **Fórmula de Prioridade**

@@ -57,9 +57,9 @@ def bfs(disciplina, grafo, status_do_curso, visitados, p):
         O = dados.get("Obrigatoria", dados.get("Optativa", 0))
         A = dados.get("Anual", 0)
         periodo = dados.get("Periodo", 0)
-        if p == periodo:
+        if int(p) == int(periodo):
             S = 1
-        elif p < periodo:
+        elif int(p) < int(periodo):
             S = -10
         else:
             S = 0
